@@ -1,4 +1,8 @@
-name = "status"
-compatibility_date = "2025-11-2"  # 使用当前日期或最新兼容日期
-compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "dist"  # 根据实际构建输出目录调整
+name = "site-status"
+type = "pages"
+main = "dist/worker.js"  # 指向 Nuxt 生成的 worker 入口
+compatibility_date = "2025-11-02"
+
+[pages]
+  project_name = "site-status"
+  dist = "dist"  # 静态文件输出目录
